@@ -24,7 +24,7 @@
 
 <template>
     <div id="menu">
-        <h1>LOGO</h1>
+        <Button class="logo" @click="navigateTo('/')"><h1>LOGO</h1></Button>
         <ul>
             <li class="active"><Button label="Home" :class="{ active: isShop }" @click="navigateTo('/')"></Button></li>
             <li><Button label="Shop" :class="{ active: isShop }" @click="navigateTo('/shop')"></Button></li>
@@ -57,6 +57,11 @@
         list-style-type: none;
     }
     #menu ul li Button{
+        background-color: var(--surface-section);
+        color: var(--text-color);
+        border: none;
+    }
+    .logo {
         background-color: var(--surface-section);
         color: var(--text-color);
         border: none;

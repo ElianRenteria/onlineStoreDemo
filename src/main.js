@@ -7,6 +7,7 @@ import Contact from './components/Contact.vue'
 import About from './components/About.vue'
 import Cart from './components/Cart.vue'
 
+import store from './store';
 
 import PriemVue from 'primevue/config'
 import InputText from 'primevue/inputtext';
@@ -34,6 +35,7 @@ const app = createApp(App);
 app.use(router);
 app.use(PriemVue);
 app.use(ToastService);
+app.use(store);
 
 app.component('Button', Button);
 app.component('InputText', InputText);

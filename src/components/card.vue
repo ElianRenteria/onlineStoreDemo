@@ -9,15 +9,15 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, defineProps } from 'vue';
 
-const isHovered = ref(false);
-
-const props = {
+const props = defineProps({
   imageSrc: String,
   price: String,
   description: String
-};
+});
+
+const isHovered = ref(false);
 </script>
 
 <style scoped>
